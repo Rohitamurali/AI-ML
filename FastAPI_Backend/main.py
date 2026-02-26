@@ -8,7 +8,8 @@ from model import recommend,output_recommended_recipes
 dataset=pd.read_csv('../Data/dataset.csv',compression='gzip')
 
 app = FastAPI()
-
+templates = Jinja2Templates(directory="Frontend/templates")
+app.mount("/static", StaticFiles(directory="Frontend/static"), name="static")
 
 class params(BaseModel):
     n_neighbors:int=5
