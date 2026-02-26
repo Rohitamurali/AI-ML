@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="home-container">
+
+    <!-- LEFT SIDE -->
+    <div class="home-text">
+        <h1>AI Diet Recommendation System</h1>
+        <p>
+            Smart Personalized Nutrition Planning Using AI/ML.
+            Get customized meal plans based on your health goals,
+            calorie needs and lifestyle.
+        </p>
+
+        <a href="/login" class="btn">Get Started</a>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="home-image">
+        <img src="{{ url_for('static', filename='images/food.png') }}" alt="Healthy Food">
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,301 @@
+/* ===============================
+   GLOBAL
+=================================*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+
+/* ===============================
+   NAVBAR
+=================================*/
+
+.navbar {
+    background: #0b0b0b;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px #00f2ff;
+}
+
+.logo {
+    color: #00f2ff;
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #00f2ff;
+}
+
+
+/* ===============================
+   HOME PAGE
+=================================*/
+
+.hero {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #00f2ff;
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px #00f2ff;
+}
+
+
+/* ===============================
+   LOGIN / REGISTER
+=================================*/
+
+.login-wrapper {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.login-card {
+    width: 350px;
+    padding: 40px;
+    background: #0b0b0b;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 40px #00f2ff;
+}
+
+.login-card h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #aaa;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: -15px;
+    font-size: 12px;
+    color: #00f2ff;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #00f2ff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    box-shadow: 0 0 20px #00f2ff;
+}
+
+.signup-text {
+    color: white;
+    margin-top: 20px;
+}
+
+.signup-text a {
+    color: #00f2ff;
+    text-decoration: none;
+}
+
+
+/* ===============================
+   ADMIN DASHBOARD (NEON THEME)
+=================================*/
+
+.dashboard-body {
+    background: black;
+    min-height: 100vh;
+}
+
+.dashboard-container {
+    width: 85%;
+    margin: 50px auto;
+    padding: 40px;
+    background: #0b0b0b;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #00f2ff;
+}
+
+
+/* Header */
+
+.dashboard-header h1 {
+    color: #00f2ff;
+    margin-bottom: 5px;
+}
+
+.dashboard-header p {
+    color: #aaa;
+}
+
+
+/* Stats Card */
+
+.stats-card {
+    background: #111;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 0 25px #00f2ff;
+}
+
+.stats-card h2 {
+    font-size: 42px;
+    margin-top: 10px;
+    color: #00f2ff;
+}
+
+
+/* Table Card */
+
+.table-card {
+    background: #111;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 0 25px #00f2ff;
+}
+
+.table-card h3 {
+    margin-bottom: 20px;
+    color: #00f2ff;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+table thead {
+    background: #00f2ff;
+    color: black;
+}
+
+table th,
+table td {
+    padding: 14px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background: #1a1a1a;
+}
+
+table tr:hover {
+    background: #222;
+}
+
+
+/* Delete Button */
+
+.delete-btn {
+    background: #00f2ff;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    box-shadow: 0 0 15px #00f2ff;
+}
+
+
+/* ===============================
+   HOME PAGE MODERN LAYOUT
+=================================*/
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    min-height: 80vh;
+}
+
+.home-text {
+    width: 50%;
+}
+
+.home-text h1 {
+    font-size: 42px;
+    color: #00f2ff;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.home-image {
+    width: 45%;
+    text-align: center;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #00f2ff;
+}

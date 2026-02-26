@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Diet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="{% block body_class %}{% endblock %}">
+
+<nav class="navbar">
+    <h2 class="logo">AI Diet</h2>
+
+    <div class="nav-links">
+
+        <a href="/">Home</a>
+
+        {% if session.get("username") %}
+            
+            {% if session.get("role") == "admin" %}
+                <a href="/dashboard">Dashboard</a>
+            {% else %}
+                <a href="/diet" target="_blank">Diet Plan</a>
+            {% endif %}
+
+            <a href="/logout">Logout</a>
+
+        {% else %}
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        {% endif %}
+
+    </div>
+</nav>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
